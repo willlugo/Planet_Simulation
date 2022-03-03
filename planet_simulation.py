@@ -29,6 +29,9 @@ class Planet():
         other_pos = other.pos
         distance_xy = other_pos - self.pos
         distance = np.sqrt(distance_xy[0]**2 + distance_xy[1]**2)
+        #distance_x = other_pos[0] - self.pos[0]
+        #distance_y = other_pos[1] - self.pos[1]
+        #distance = np.sqrt(distance_x**2 + distance_y**2)
         print(f"distance between {self} and {other} is {distance}")
 
         if other.sun:
